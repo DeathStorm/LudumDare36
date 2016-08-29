@@ -6,16 +6,17 @@ public class PanelController : MonoBehaviour {
     public AudioSource audio;
 
     public GameObject panelMainShop;
-    public GameObject panelUpgrade;
+    //public GameObject panelUpgrade;
     public GameObject panelSell;
     public GameObject panelPurchase;
-    public GameObject panelStorage;
+    //public GameObject panelStorage;
     public GameObject panelForge;
     public GameObject panelCustomers;
 
     
+    
     void Start () {
-	
+       
 	} // END Start
 	
 	void Update ()
@@ -36,73 +37,74 @@ public class PanelController : MonoBehaviour {
         {
             case 0:                                     // Main Shop
                 panelMainShop.SetActive(true);
-                panelUpgrade.SetActive(false);
+                //panelUpgrade.SetActive(false);
                 panelSell.SetActive(false);
                 panelPurchase.SetActive(false);
-                panelStorage.SetActive(false);
+                //panelStorage.SetActive(false);
                 panelForge.SetActive(false);
                 panelCustomers.SetActive(false);
                 audio.Play();
                 break;
             case 1:                                     // Upgrade
                 panelMainShop.SetActive(false);
-                panelUpgrade.SetActive(true);
+                //panelUpgrade.SetActive(true);
                 panelSell.SetActive(false);
                 panelPurchase.SetActive(false);
-                panelStorage.SetActive(false);
+                //panelStorage.SetActive(false);
                 panelForge.SetActive(false);
                 panelCustomers.SetActive(false);
                 audio.Play();
                 break;
             case 2:                                     // Sell
                 panelMainShop.SetActive(false);
-                panelUpgrade.SetActive(false);
+                //panelUpgrade.SetActive(false);
                 panelSell.SetActive(true);
                 panelPurchase.SetActive(false);
-                panelStorage.SetActive(false);
+                //panelStorage.SetActive(false);
                 panelForge.SetActive(false);
                 panelCustomers.SetActive(false);
                 audio.Play();
                 break;
             case 3:                                     // Purchase
                 panelMainShop.SetActive(false);
-                panelUpgrade.SetActive(false);
+                //panelUpgrade.SetActive(false);
                 panelSell.SetActive(false);
                 panelPurchase.SetActive(true);
-                panelStorage.SetActive(false);
+                //panelStorage.SetActive(false);
                 panelForge.SetActive(false);
                 panelCustomers.SetActive(false);
                 audio.Play();
                 break;
             case 4:                                     // Storage
                 panelMainShop.SetActive(false);
-                panelUpgrade.SetActive(false);
+                //panelUpgrade.SetActive(false);
                 panelSell.SetActive(false);
                 panelPurchase.SetActive(false);
-                panelStorage.SetActive(true);
+                //panelStorage.SetActive(true);
                 panelForge.SetActive(false);
                 panelCustomers.SetActive(false);
                 audio.Play();
                 break;
             case 5:                                     // Forge
                 panelMainShop.SetActive(false);
-                panelUpgrade.SetActive(false);
+                //panelUpgrade.SetActive(false);
                 panelSell.SetActive(false);
                 panelPurchase.SetActive(false);
-                panelStorage.SetActive(false);
+                //panelStorage.SetActive(false);
                 panelForge.SetActive(true);
                 panelCustomers.SetActive(false);
                 audio.Play();
                 break;
             case 6:                                     // Customer
                 panelMainShop.SetActive(false);
-                panelUpgrade.SetActive(false);
+                //panelUpgrade.SetActive(false);
                 panelSell.SetActive(false);
                 panelPurchase.SetActive(false);
-                panelStorage.SetActive(false);
+                //panelStorage.SetActive(false);
                 panelForge.SetActive(false);
                 panelCustomers.SetActive(true);
                 audio.Play();
+
                 break;
         }
 

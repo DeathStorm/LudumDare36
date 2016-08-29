@@ -19,12 +19,13 @@ public class ButtonReaction : MonoBehaviour {
     public void ButtonPress(int panelID)
     {
         pController.GetChange(panelID);
+        //Debug.Log(this.gameObject.name);
     } // END ButtonPress
 
 
     public void OnMouseDown()
     {
-        pController.GetChange(panelUID);
+       // pController.GetChange(panelUID);
     } // END OnMouseDown
 
 
